@@ -5,7 +5,7 @@ Define, implement and test a sudoku solver.
 Use the Java programming language, test using the attached matrices.
 Write a document about architecture, explain the choice and ways to solve the problem.
 
-![Snj-CSV-File-Reader](https://github.com/snj-shvchnk/Snj-Java-Sudocu-Solver/blob/master/docs/screen_java_debug.jpg.jpg?raw=true)
+![Snj-CSV-File-Reader](https://github.com/snj-shvchnk/Snj-Java-Sudocu-Solver/blob/master/docs/screen_java_debug.jpg?raw=true)
 
 ## Preparation:
 
@@ -40,7 +40,7 @@ Structurally, the processing stages of each iteration can be defined as follows:
 
 ### Graphic representation of the algorithm
 
-![Snj-CSV-File-Reader](https://github.com/snj-shvchnk/Snj-Java-Sudocu-Solver/blob/master/docs/sudocu_algoritm.jpg.jpg?raw=true)
+![Snj-CSV-File-Reader](https://github.com/snj-shvchnk/Snj-Java-Sudocu-Solver/blob/master/docs/sudocu_algoritm.jpg?raw=true)
 
 
 ## Program structure

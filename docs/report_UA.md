@@ -5,7 +5,7 @@
 Використати мову програмування Java, протестувати за допомогою доданих матриць.
 Написати документ про архітектуру, пояснити вибір та способи вирішення задачі.
 
-![Snj-CSV-File-Reader](https://github.com/snj-shvchnk/Snj-Java-Sudocu-Solver/blob/master/docs/screen_java_debug.jpg.jpg?raw=true)
+![Snj-CSV-File-Reader](https://github.com/snj-shvchnk/Snj-Java-Sudocu-Solver/blob/master/docs/screen_java_debug.jpg?raw=true)
 
 ## Підготовка:
 
@@ -40,7 +40,7 @@
 
 ### Графічне відображення алгоритму
 
-![Snj-CSV-File-Reader](https://github.com/snj-shvchnk/Snj-Java-Sudocu-Solver/blob/master/docs/sudocu_algoritm.jpg.jpg?raw=true)
+![Snj-CSV-File-Reader](https://github.com/snj-shvchnk/Snj-Java-Sudocu-Solver/blob/master/docs/sudocu_algoritm.jpg?raw=true)
 
 ## Структура програми
 При невеликому обсязі, вирішено обмежетись однією директорією і декількома класами, що містять логіку і налаштування програми.
