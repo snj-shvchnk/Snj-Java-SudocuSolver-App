@@ -2,13 +2,14 @@ import java.util.Arrays;
 
 public class Utils {
 
-    static int N = Const.Size;
+    private static int _MatrixSize = Const.MatrixSize;
 
-    public static void printDoubleGrid(int[][] input, int[][] solved)
+    // Print two N*N arrays to console in same row
+    public static void PrintDoubleGrid(int[][] input, int[][] solved)
     {
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < _MatrixSize; i++) {
 
-            for (int j = 0; j < N; j++) {
+            for (int j = 0; j < _MatrixSize; j++) {
                 int value = input[i][j];
                 if (value == 0)
                     System.out.print("_ ");
@@ -18,7 +19,7 @@ public class Utils {
 
             System.out.print("\t");
 
-            for (int j = 0; j < N; j++) {
+            for (int j = 0; j < _MatrixSize; j++) {
                 int value = solved[i][j];
                 System.out.print(value + " ");
             }
@@ -27,10 +28,11 @@ public class Utils {
         }
     }
 
-    static void printGrid(int[][] grid)
+    // Simple print N*N aray as grid to console
+    public static void PrintGrid(int[][] grid)
     {
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
+        for (int i = 0; i < _MatrixSize; i++) {
+            for (int j = 0; j < _MatrixSize; j++) {
                 int value = grid[i][j];
                 if (value == 0)
                     System.out.print("_ ");
@@ -41,9 +43,11 @@ public class Utils {
         }
     }
 
-    static int[][] cloneArray(int[][] a) {
-        int[][] b = new int[N][];
-        for (int i = 0; i < N; i++) {
+    // Make value-based array copy, 
+    // without reference to source object.
+    public static int[][] CloneArray(int[][] a) {
+        int[][] b = new int[_MatrixSize][];
+        for (int i = 0; i < _MatrixSize; i++) {
             b[i] = Arrays.copyOf(a[i], a[i].length);
         }
         return b;

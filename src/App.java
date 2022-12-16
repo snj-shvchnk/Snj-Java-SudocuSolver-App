@@ -1,23 +1,4 @@
 public class App {
-
-    static void solveGrid(int grid[][]) {
-        System.out.println("\nSolver runs...");
-        long startTime = System.currentTimeMillis();
-
-        int[][] result = Utils.cloneArray(grid);
-        boolean isSolved = Sudocu.processGrid(result, 0, 0);
-        if (isSolved) {
-            System.out.println("Input:\t\t\tSolved:");
-            Utils.printDoubleGrid(grid, result);
-        }
-        else {
-            System.out.println("Input:\t\t\tNo Solution exists!");
-            Utils.printGrid(grid);
-        }
-        long endTime = System.currentTimeMillis();
-        System.out.println("DONE. Elapsed time: " + (endTime - startTime) + "ms;");            
-    }
-
     public static void main(String[] args) {
         System.out.println("Hello, Snj!");
 
@@ -33,7 +14,7 @@ public class App {
             { 0, 0, 0, 2, 0, 7, 6, 8, 0 }, 
             { 1, 0, 2, 0, 0, 8, 3, 5, 0 }
         };
-        solveGrid(grid_easy);
+        _solveGrid(grid_easy);
 
         int grid_hard[][] = 
         { 
@@ -47,7 +28,7 @@ public class App {
             { 0, 6, 0, 4, 3, 0, 0, 0, 0 },
             { 8, 5, 0, 0, 0, 0, 4, 0, 0 }
         };
-        solveGrid(grid_hard);
+        _solveGrid(grid_hard);
 
         int grid_unsolved[][] = 
         { 
@@ -61,6 +42,37 @@ public class App {
             { 0, 0, 9, 4, 3, 0, 0, 0, 0 },
             { 8, 5, 0, 0, 0, 0, 0, 0, 0 }
         };
-        solveGrid(grid_unsolved);
+        _solveGrid(grid_unsolved);
+
+        int grid_current[][] = 
+        { 
+            { 0, 0, 4, 7, 1, 0, 0, 0, 0 },
+            { 0, 7, 2, 8, 0, 6, 5, 0, 0 },
+            { 0, 0, 0, 0, 0, 5, 0, 0, 7 },
+            { 0, 1, 0, 6, 9, 0, 2, 0, 0 },
+            { 3, 9, 0, 0, 5, 0, 0, 0, 0 },
+            { 0, 0, 0, 0, 0, 0, 0, 8, 5 },
+            { 0, 0, 1, 2, 3, 0, 8, 0, 4 },
+            { 0, 0, 3, 5, 0, 4, 0, 0, 2 },
+            { 2, 4, 0, 9, 0, 0, 0, 0, 0 }
+        };
+        _solveGrid(grid_current);
+    }
+
+    private static void _solveGrid(int grid[][]) {
+        System.out.println("\nSolver runs...");
+        long startTime = System.currentTimeMillis();
+    
+        int[][] result = Utils.CloneArray(grid);
+        boolean isSolved = Sudocu.ProcessGrid(result);
+        if (isSolved) {
+            System.out.println("Input:\t\t\tSolved:");
+            Utils.PrintDoubleGrid(grid, result);
+        } else {
+            System.out.println("Input:\t\t\tNo Solution exists!");
+            Utils.PrintGrid(grid);
+        }
+        long endTime = System.currentTimeMillis();
+        System.out.println("DONE. Elapsed time: " + (endTime - startTime) + "ms;");            
     }
 }
