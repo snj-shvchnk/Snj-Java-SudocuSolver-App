@@ -1,4 +1,5 @@
-# -=|Snj-Sudocu-Solver-Java|=-
+# Snj-Sudocu-Solver-Java
+## A solution with logic classes that use recursive algorithms and distributed assembly of the program in Java.
 
 ![Snj-CSV-File-Reader](https://github.com/snj-shvchnk/Snj-Java-Sudocu-Solver/blob/master/docs/screen_java_debug.jpg?raw=true)
 
